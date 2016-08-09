@@ -1,4 +1,5 @@
 require_relative 'spec_helper'
+require 'pry'
 
 describe "HauntedHouse" do
 
@@ -23,6 +24,7 @@ describe "HauntedHouse" do
       name: "Undead: The Possession",
       theme: "zombies"
     )
+    #binding.pry
     expect(HauntedHouse.find_by(theme: "zombies")).to eq(undead)
   end
 
